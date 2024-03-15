@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71043B0E2BA4C17F003FD1B4 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71043B0D2BA4C17F003FD1B4 /* LoginPage.swift */; };
+		71043B112BA4C53D003FD1B4 /* BalooBhai-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71043B102BA4C53D003FD1B4 /* BalooBhai-Regular.ttf */; };
 		712113D42BA4689100E7F28B /* Moldcell_HackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712113D32BA4689100E7F28B /* Moldcell_HackathonApp.swift */; };
 		712113D62BA4689100E7F28B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712113D52BA4689100E7F28B /* ContentView.swift */; };
 		712113D82BA4689200E7F28B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712113D72BA4689200E7F28B /* Assets.xcassets */; };
@@ -14,6 +16,7 @@
 		712113E52BA4689200E7F28B /* Moldcell_HackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712113E42BA4689200E7F28B /* Moldcell_HackathonTests.swift */; };
 		712113EF2BA4689200E7F28B /* Moldcell_HackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712113EE2BA4689200E7F28B /* Moldcell_HackathonUITests.swift */; };
 		712113F12BA4689200E7F28B /* Moldcell_HackathonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712113F02BA4689200E7F28B /* Moldcell_HackathonUITestsLaunchTests.swift */; };
+		715277592BA4D5540095B594 /* RegistrationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715277582BA4D5540095B594 /* RegistrationPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		712113D02BA4689100E7F28B /* Moldcell_Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moldcell_Hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71043B0D2BA4C17F003FD1B4 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		71043B102BA4C53D003FD1B4 /* BalooBhai-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooBhai-Regular.ttf"; sourceTree = "<group>"; };
+		71043B122BA4C66C003FD1B4 /* Moldcell-Hackathon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Moldcell-Hackathon-Info.plist"; sourceTree = SOURCE_ROOT; };
+		712113D02BA4689100E7F28B /* SilverLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilverLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		712113D32BA4689100E7F28B /* Moldcell_HackathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moldcell_HackathonApp.swift; sourceTree = "<group>"; };
 		712113D52BA4689100E7F28B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		712113D72BA4689200E7F28B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +50,7 @@
 		712113EA2BA4689200E7F28B /* Moldcell_HackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Moldcell_HackathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		712113EE2BA4689200E7F28B /* Moldcell_HackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moldcell_HackathonUITests.swift; sourceTree = "<group>"; };
 		712113F02BA4689200E7F28B /* Moldcell_HackathonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moldcell_HackathonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		715277582BA4D5540095B594 /* RegistrationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71043B0F2BA4C4B8003FD1B4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				71043B102BA4C53D003FD1B4 /* BalooBhai-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		712113C72BA4689100E7F28B = {
 			isa = PBXGroup;
 			children = (
@@ -84,7 +99,7 @@
 		712113D12BA4689100E7F28B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				712113D02BA4689100E7F28B /* Moldcell_Hackathon.app */,
+				712113D02BA4689100E7F28B /* SilverLink.app */,
 				712113E02BA4689200E7F28B /* Moldcell_HackathonTests.xctest */,
 				712113EA2BA4689200E7F28B /* Moldcell_HackathonUITests.xctest */,
 			);
@@ -94,8 +109,12 @@
 		712113D22BA4689100E7F28B /* Moldcell_Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				71043B122BA4C66C003FD1B4 /* Moldcell-Hackathon-Info.plist */,
+				71043B0F2BA4C4B8003FD1B4 /* Fonts */,
 				712113D32BA4689100E7F28B /* Moldcell_HackathonApp.swift */,
 				712113D52BA4689100E7F28B /* ContentView.swift */,
+				71043B0D2BA4C17F003FD1B4 /* LoginPage.swift */,
+				715277582BA4D5540095B594 /* RegistrationPage.swift */,
 				712113D72BA4689200E7F28B /* Assets.xcassets */,
 				712113D92BA4689200E7F28B /* Preview Content */,
 			);
@@ -144,7 +163,7 @@
 			);
 			name = Moldcell_Hackathon;
 			productName = Moldcell_Hackathon;
-			productReference = 712113D02BA4689100E7F28B /* Moldcell_Hackathon.app */;
+			productReference = 712113D02BA4689100E7F28B /* SilverLink.app */;
 			productType = "com.apple.product-type.application";
 		};
 		712113DF2BA4689200E7F28B /* Moldcell_HackathonTests */ = {
@@ -233,6 +252,7 @@
 			files = (
 				712113DB2BA4689200E7F28B /* Preview Assets.xcassets in Resources */,
 				712113D82BA4689200E7F28B /* Assets.xcassets in Resources */,
+				71043B112BA4C53D003FD1B4 /* BalooBhai-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +278,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				712113D62BA4689100E7F28B /* ContentView.swift in Sources */,
+				715277592BA4D5540095B594 /* RegistrationPage.swift in Sources */,
+				71043B0E2BA4C17F003FD1B4 /* LoginPage.swift in Sources */,
 				712113D42BA4689100E7F28B /* Moldcell_HackathonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +447,8 @@
 				DEVELOPMENT_TEAM = K9YT824399;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Moldcell-Hackathon-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SilverLink;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -436,7 +460,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vintuss.Moldcell-Hackathon";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SilverLink;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,6 +478,8 @@
 				DEVELOPMENT_TEAM = K9YT824399;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Moldcell-Hackathon-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SilverLink;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -465,7 +491,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vintuss.Moldcell-Hackathon";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SilverLink;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
