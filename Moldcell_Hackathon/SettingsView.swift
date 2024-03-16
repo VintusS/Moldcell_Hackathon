@@ -13,25 +13,32 @@ struct SettingsView: View {
     @State private var accessPhotos = false
     @State private var accessContacts = false
     @State private var useDefaultNumber = true
-    @State private var customPhoneNumber = ""
+    @AppStorage("customPhoneNumber") var customPhoneNumber: String = "112"
 
     var body: some View {
         Form {
-            Toggle("Access Photos", isOn: $accessPhotos)
+            Toggle("Permite acces la Galerie", isOn: $accessPhotos)
                 .onChange(of: accessPhotos) { newValue in
                     requestPhotoAccess(isGranted: newValue)
                 }
 
-            Toggle("Access Contacts", isOn: $accessContacts)
+            Toggle("Permite acces la Contacte", isOn: $accessContacts)
                 .onChange(of: accessContacts) { newValue in
                     requestContactAccess(isGranted: newValue)
                 }
 
-            Section(header: Text("Emergency Phone Number")) {
-                Toggle("Use default number (112)", isOn: $useDefaultNumber)
+            Section(header: Text("Apel de Urgenta")) {
+                Toggle("Foloseste numarul de urgenta (112)", isOn: $useDefaultNumber)
+                    .onChange(of: useDefaultNumber) { newValue in
+                        if newValue {
+                            customPhoneNumber = "112"
+                        } else {
+                            customPhoneNumber = ""
+                        }
+                    }
 
                 if !useDefaultNumber {
-                    TextField("Enter custom number", text: $customPhoneNumber)
+                    TextField("Introduceti numarul unui cunoscut", text: $customPhoneNumber)
                         .keyboardType(.numberPad)
                 }
             }

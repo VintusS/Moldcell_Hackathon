@@ -6,13 +6,30 @@
 //
 
 import SwiftUI
+import AVKit
 
-struct testliviu: View {
+struct VideoPlayerView: UIViewControllerRepresentable {
+    let videoURL: URL
+
+    func makeUIViewController(context: Context) -> AVPlayerViewController {
+        let player = AVPlayer(url: videoURL)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        player.play() // Start playing the video
+        return playerViewController
+    }
+
+    func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {}
+}
+
+struct ContentViewu: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VideoPlayerView(videoURL: URL(string: "https://play.md/embed/4007649?title=false&autoplay=false")!)
+            .edgesIgnoringSafeArea(.all)
     }
 }
 
+
 #Preview {
-    testliviu()
+    ContentViewu()
 }

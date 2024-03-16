@@ -30,8 +30,8 @@ struct RegistrationPage: View {
 
             Group {
                 customTextField(placeholder: "Nume", text: $name, isFieldValid: !name.isEmpty)
-                customTextField(placeholder: "Numar de Telefon", text: $phoneNumber, isFieldValid: !phoneNumber.isEmpty)
-                customTextField(placeholder: "Confirma Numarul de Telefon", text: $confirmPhoneNumber, isFieldValid: phoneNumber == confirmPhoneNumber && !confirmPhoneNumber.isEmpty)
+                customPhoneNumberField(placeholder: "Numar de Telefon", text: $phoneNumber, isFieldValid: !phoneNumber.isEmpty)
+                customPhoneNumberField(placeholder: "Confirma Numarul de Telefon", text: $confirmPhoneNumber, isFieldValid: phoneNumber == confirmPhoneNumber && !confirmPhoneNumber.isEmpty)
                 customSecureField(placeholder: "Parola", text: $password, isFieldValid: !password.isEmpty)
                 customSecureField(placeholder: "Confirma Parola", text: $confirmPassword, isFieldValid: password == confirmPassword && !confirmPassword.isEmpty)
             }
@@ -85,6 +85,18 @@ struct RegistrationPage: View {
             .background(phoneNumber.isEmpty && showValidationErrors ? Color.red.opacity(0.1) : Color.white)
             .cornerRadius(90)
             .shadow(color: Color.black.opacity(0.12), radius: 10, x: 0, y: 3)
+    }
+    
+    private func customPhoneNumberField(placeholder: String, text: Binding<String>, isFieldValid: Bool) -> some View {
+        TextField(placeholder, text: text)
+            .font(.custom("BalooBhai-Regular", size: 15))
+            .foregroundColor(Color.black.opacity(0.5))
+            .frame(width: 300, height: 60)
+            .padding(.leading, 20)
+            .background(phoneNumber.isEmpty && showValidationErrors ? Color.red.opacity(0.1) : Color.white)
+            .cornerRadius(90)
+            .shadow(color: Color.black.opacity(0.12), radius: 10, x: 0, y: 3)
+            .keyboardType(.numberPad)
     }
 
     private func customSecureField(placeholder: String, text: Binding<String>, isFieldValid: Bool) -> some View {

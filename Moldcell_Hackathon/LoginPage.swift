@@ -11,6 +11,7 @@ struct LoginPage: View {
     @State private var phoneNumber: String = ""
     @State private var password: String = ""
     @State private var showValidationErrors: Bool = false
+    @State private var navigateToMain = false
 
     var body: some View {
         NavigationStack {
@@ -38,6 +39,7 @@ struct LoginPage: View {
                         .padding(.leading, 20)
                         .background(phoneNumber.isEmpty && showValidationErrors ? Color.red.opacity(0.1) : Color.white)
                         .cornerRadius(90)
+                        .keyboardType(.numberPad)
                 }
                 
                 ZStack {
@@ -59,9 +61,13 @@ struct LoginPage: View {
                     // Validate input fields
                     showValidationErrors = phoneNumber.isEmpty || password.isEmpty
                     if !showValidationErrors {
-                        // Proceed with login
+                        navigateToMain = true
                     }
                 }
+                .background(
+                    NavigationLink("", destination: MainPage(), isActive: $navigateToMain)
+                    .hidden()
+                )
                 .font(.custom("BalooBhai-Regular", size: 20))
                 .frame(width: 300, height: 60)
                 .background(Color.blue)
