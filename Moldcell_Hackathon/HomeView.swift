@@ -40,6 +40,9 @@ struct HomeView: View {
                 }
             }
             .padding()
+            
+            
+            
             Spacer()
         }
     }
