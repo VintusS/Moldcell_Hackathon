@@ -22,6 +22,9 @@
 		715277612BA5A7080095B594 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715277602BA5A7080095B594 /* SettingsView.swift */; };
 		715277632BA5A7130095B594 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715277622BA5A7130095B594 /* ProfileView.swift */; };
 		715277672BA6053C0095B594 /* textToSpeechTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715277662BA6053C0095B594 /* textToSpeechTest.swift */; };
+		715277702BA607C70095B594 /* StiriMDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152776F2BA607C70095B594 /* StiriMDView.swift */; };
+		715277722BA60A4C0095B594 /* StiriMDDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715277712BA60A4C0095B594 /* StiriMDDecoding.swift */; };
+		715277732BA60BA70095B594 /* StiriMDArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = 715277682BA605F60095B594 /* StiriMDArticles.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,8 @@
 		715277622BA5A7130095B594 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		715277662BA6053C0095B594 /* textToSpeechTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textToSpeechTest.swift; sourceTree = "<group>"; };
 		715277682BA605F60095B594 /* StiriMDArticles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StiriMDArticles.json; sourceTree = "<group>"; };
+		7152776F2BA607C70095B594 /* StiriMDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StiriMDView.swift; sourceTree = "<group>"; };
+		715277712BA60A4C0095B594 /* StiriMDDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StiriMDDecoding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +130,7 @@
 				71043B0F2BA4C4B8003FD1B4 /* Fonts */,
 				715277692BA606BF0095B594 /* Login Pages */,
 				7152776B2BA606FB0095B594 /* Main Page Views */,
+				7152776E2BA607960095B594 /* News */,
 				7152776C2BA6071A0095B594 /* TestViews */,
 				7152776D2BA607300095B594 /* Data */,
 				712113D92BA4689200E7F28B /* Preview Content */,
@@ -191,8 +197,17 @@
 			isa = PBXGroup;
 			children = (
 				715277682BA605F60095B594 /* StiriMDArticles.json */,
+				715277712BA60A4C0095B594 /* StiriMDDecoding.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		7152776E2BA607960095B594 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				7152776F2BA607C70095B594 /* StiriMDView.swift */,
+			);
+			path = News;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +317,7 @@
 				712113DB2BA4689200E7F28B /* Preview Assets.xcassets in Resources */,
 				712113D82BA4689200E7F28B /* Assets.xcassets in Resources */,
 				71043B112BA4C53D003FD1B4 /* BalooBhai-Regular.ttf in Resources */,
+				715277732BA60BA70095B594 /* StiriMDArticles.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715277722BA60A4C0095B594 /* StiriMDDecoding.swift in Sources */,
 				7152775B2BA5A28D0095B594 /* TermsandConditions.swift in Sources */,
 				715277632BA5A7130095B594 /* ProfileView.swift in Sources */,
 				715277612BA5A7080095B594 /* SettingsView.swift in Sources */,
@@ -333,6 +350,7 @@
 				715277592BA4D5540095B594 /* RegistrationPage.swift in Sources */,
 				71043B0E2BA4C17F003FD1B4 /* LoginPage.swift in Sources */,
 				715277672BA6053C0095B594 /* textToSpeechTest.swift in Sources */,
+				715277702BA607C70095B594 /* StiriMDView.swift in Sources */,
 				712113D42BA4689100E7F28B /* Moldcell_HackathonApp.swift in Sources */,
 				7152775D2BA5A41B0095B594 /* MainPage.swift in Sources */,
 			);
