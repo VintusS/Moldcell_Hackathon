@@ -17,6 +17,7 @@
 		712113EF2BA4689200E7F28B /* Moldcell_HackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712113EE2BA4689200E7F28B /* Moldcell_HackathonUITests.swift */; };
 		712113F12BA4689200E7F28B /* Moldcell_HackathonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712113F02BA4689200E7F28B /* Moldcell_HackathonUITestsLaunchTests.swift */; };
 		715277592BA4D5540095B594 /* RegistrationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715277582BA4D5540095B594 /* RegistrationPage.swift */; };
+		7152775B2BA5A28D0095B594 /* TermsandConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152775A2BA5A28D0095B594 /* TermsandConditions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		712113EE2BA4689200E7F28B /* Moldcell_HackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moldcell_HackathonUITests.swift; sourceTree = "<group>"; };
 		712113F02BA4689200E7F28B /* Moldcell_HackathonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moldcell_HackathonUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		715277582BA4D5540095B594 /* RegistrationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPage.swift; sourceTree = "<group>"; };
+		7152775A2BA5A28D0095B594 /* TermsandConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsandConditions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				712113D52BA4689100E7F28B /* ContentView.swift */,
 				71043B0D2BA4C17F003FD1B4 /* LoginPage.swift */,
 				715277582BA4D5540095B594 /* RegistrationPage.swift */,
+				7152775A2BA5A28D0095B594 /* TermsandConditions.swift */,
 				712113D72BA4689200E7F28B /* Assets.xcassets */,
 				712113D92BA4689200E7F28B /* Preview Content */,
 			);
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7152775B2BA5A28D0095B594 /* TermsandConditions.swift in Sources */,
 				712113D62BA4689100E7F28B /* ContentView.swift in Sources */,
 				715277592BA4D5540095B594 /* RegistrationPage.swift in Sources */,
 				71043B0E2BA4C17F003FD1B4 /* LoginPage.swift in Sources */,

@@ -47,7 +47,7 @@ struct RegistrationPage: View {
                         .foregroundColor(Color.black.opacity(0.5))
                 }
 
-                NavigationLink(destination: Text("Terms and Conditions page")) {
+                NavigationLink(destination: TermsandConditions()) {
                     Text("Termenii si Conditiile")
                         .font(.custom("BalooBhai-Regular", size: 15))
                         .foregroundColor(Color.blue)

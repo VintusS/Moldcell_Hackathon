@@ -78,12 +78,11 @@ struct LoginPage: View {
                 }
                 
                 Spacer()
-                // "Terms and conditions" link
-                Button("Termeni si Conditii") {
-                    // Handle the link action
+                NavigationLink(destination: TermsandConditions()) {
+                    Text("Termeni si Conditii")
+                        .font(.custom("BalooBhai-Regular", size: 15))
+                        .foregroundStyle(Color.black.opacity(0.5))
                 }
-                .font(.custom("BalooBhai-Regular", size: 15))
-                .foregroundStyle(Color.black.opacity(0.5))
             }
             .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
