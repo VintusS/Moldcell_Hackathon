@@ -42,10 +42,17 @@ struct StiriMDView: View {
                 }
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
-            .navigationBarTitle("Stiri.md", displayMode: .large)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Stiri.md")
+                        .font(.custom("BalooBhai-regular", size: 25))
+                        .frame(maxWidth: .infinity)
+                }
+            }
+            .padding(.top, -50)
         }
     }
-    
+
     private func articleContent(for article: NewsArticle) -> some View {
         VStack(alignment: .leading, spacing: 10) {
             Text(article.Title)
@@ -74,7 +81,7 @@ struct StiriMDView: View {
                 .font(.custom("BalooBhai-regular", size: 15))
         }
     }
-    
+
     private func speakButton(for article: NewsArticle) -> some View {
         HStack {
             Button(isSpeaking ? "Opreste citirea" : "Incepe sa citesti") {
@@ -103,7 +110,7 @@ struct StiriMDView: View {
             .foregroundStyle(.blue)
         }
     }
-    
+
     private func speakArticle(_ article: NewsArticle) {
         let textToSpeak = "\(article.Title). \(article.Subtitle). \(article.Description)"
         let utterance = AVSpeechUtterance(string: textToSpeak)
@@ -112,7 +119,6 @@ struct StiriMDView: View {
     }
 }
 
-// Preview
 struct StiriMDView_Previews: PreviewProvider {
     static var previews: some View {
         StiriMDView()
