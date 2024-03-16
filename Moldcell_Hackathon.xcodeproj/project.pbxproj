@@ -469,6 +469,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Moldcell-Hackathon-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SilverLink;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Our app needs Camera Access for adding your profile picture and adding internal photo galery for you and your friends/family";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Our app needs access to your contacts to help you connect with friends.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Our app needs Photo Library Access for adding your profile picture and setting internal photo galery for you and your friends/family";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -500,6 +503,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Moldcell-Hackathon-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SilverLink;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Our app needs Camera Access for adding your profile picture and adding internal photo galery for you and your friends/family";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Our app needs access to your contacts to help you connect with friends.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Our app needs Photo Library Access for adding your profile picture and setting internal photo galery for you and your friends/family";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
