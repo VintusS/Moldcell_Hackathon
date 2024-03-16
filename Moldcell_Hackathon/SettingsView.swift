@@ -43,10 +43,18 @@ struct SettingsView: View {
                         .onChange(of: useDefaultNumber) { newValue in
                             customPhoneNumber = newValue ? "112" : ""
                         }
-                    
+
                     if !useDefaultNumber {
                         TextField("Introduceti numarul unui cunoscut", text: $customPhoneNumber)
                             .keyboardType(.numberPad)
+                            .toolbar {
+                                ToolbarItemGroup(placement: .keyboard) {
+                                    Spacer()
+                                    Button("Done") {
+                                        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                                    }
+                                }
+                            }
                     }
                 }
                 
@@ -55,6 +63,9 @@ struct SettingsView: View {
                         navigateToLogin = true
                     }
                 }
+            }
+            .onTapGesture {
+                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
             }
             .scrollContentBackground(.hidden)
             .background(
