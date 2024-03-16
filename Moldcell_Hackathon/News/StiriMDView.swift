@@ -11,63 +11,97 @@ import AVFoundation
 struct StiriMDView: View {
     let articles = loadStiriMDArticles()
     private let speechSynthesizer = AVSpeechSynthesizer()
-    @State private var isSpeaking = true
+    @State private var isSpeaking = false
+    @State private var selectedArticleIndex = 0
 
     var body: some View {
-        List(articles, id: \.Article) { article in
-            VStack(alignment: .leading) {
-                Text(article.Title)
-                    .font(.custom("BalooBhai-regular", size: 20))
-                
-                HStack {
-                    Button(isSpeaking ? "Incepe sa citesti" : "Opreste citirea") {
-                        if isSpeaking {
-                            speakArticle(article)
-                        } else {
-                            speechSynthesizer.stopSpeaking(at: .immediate)
+        NavigationView {
+            TabView(selection: $selectedArticleIndex) {
+                ForEach(articles.indices, id: \.self) { index in
+                    ScrollView {
+                        VStack {
+                            articleContent(for: articles[index])
+
+                            GeometryReader { geometry -> Color in
+                                DispatchQueue.main.async {
+                                    let scrollY = geometry.frame(in: .global).minY
+                                    if scrollY < 0 && abs(scrollY) > geometry.size.height * 0.1 {
+                                        if selectedArticleIndex < articles.count - 1 {
+                                            selectedArticleIndex += 1
+                                        }
+                                    }
+                                }
+                                return Color.clear
+                            }.frame(height: 1)
                         }
-                        isSpeaking.toggle()
+                        .padding(.bottom, 100)
+                        .padding([.leading, .trailing], 10)
+                        .frame(width: UIScreen.main.bounds.width)
                     }
-                    .buttonStyle(PlainButtonStyle())
-                    .font(.custom("BalooBhai-regular", size: 15))
-                    .foregroundStyle(.blue)
-                    
-                    Spacer()
-                    
-                    Button("Acceseaza site-ul") {
-                        if let url = URL(string: article.Article), UIApplication.shared.canOpenURL(url) {
-                            DispatchQueue.main.async {
-                                UIApplication.shared.open(url)
-                            }
-                        }
-                    }
-                    .buttonStyle(PlainButtonStyle())
-                    .font(.custom("BalooBhai-regular", size: 15))
-                    .foregroundStyle(.blue)
+                    .tag(index)
                 }
-                
-                Divider()
-                
-                Text(article.Subtitle)
-                    .font(.custom("BalooBhai-regular", size: 15))
-                    .padding(.bottom)
-                
-                if let imageURL = URL(string: article.Image) {
-                    AsyncImage(url: imageURL) { image in
-                        image.resizable()
-                    } placeholder: {
-                        ProgressView()
-                    }
-                    .frame(height: 200)
-                    .cornerRadius(10)
-                    .padding(.bottom)
-                }
-                
-                Text(article.Description)
-                    .font(.custom("BalooBhai-regular", size: 15))
             }
+            .tabViewStyle(.page(indexDisplayMode: .never))
+            .navigationBarTitle("Stiri.md", displayMode: .large)
         }
-        .scrollContentBackground(.hidden)
+    }
+    
+    private func articleContent(for article: NewsArticle) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(article.Title)
+                .font(.custom("BalooBhai-regular", size: 20))
+            
+            speakButton(for: article)
+            
+            Divider()
+            
+            Text(article.Subtitle)
+                .font(.custom("BalooBhai-regular", size: 15))
+                .padding(.bottom)
+            
+            if let imageURL = URL(string: article.Image) {
+                AsyncImage(url: imageURL) { image in
+                    image.resizable()
+                } placeholder: {
+                    ProgressView()
+                }
+                .frame(height: 200)
+                .cornerRadius(10)
+                .padding(.bottom)
+            }
+            
+            Text(article.Description)
+                .font(.custom("BalooBhai-regular", size: 15))
+        }
+    }
+    
+    private func speakButton(for article: NewsArticle) -> some View {
+        HStack {
+            Button(isSpeaking ? "Opreste citirea" : "Incepe sa citesti") {
+                if isSpeaking {
+                    speechSynthesizer.stopSpeaking(at: .immediate)
+                } else {
+                    speakArticle(article)
+                }
+                isSpeaking.toggle()
+            }
+            .buttonStyle(PlainButtonStyle())
+            .font(.custom("BalooBhai-regular", size: 15))
+            .foregroundStyle(.blue)
+            
+            Spacer()
+            
+            Button("Acceseaza site-ul") {
+                if let url = URL(string: article.Article), UIApplication.shared.canOpenURL(url) {
+                    DispatchQueue.main.async {
+                        UIApplication.shared.open(url)
+                    }
+                }
+            }
+            .buttonStyle(PlainButtonStyle())
+            .font(.custom("BalooBhai-regular", size: 15))
+            .foregroundStyle(.blue)
+        }
     }
     
     private func speakArticle(_ article: NewsArticle) {
@@ -78,6 +112,9 @@ struct StiriMDView: View {
     }
 }
 
-#Preview {
-    StiriMDView()
+// Preview
+struct StiriMDView_Previews: PreviewProvider {
+    static var previews: some View {
+        StiriMDView()
+    }
 }

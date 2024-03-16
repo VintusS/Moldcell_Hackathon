@@ -25,6 +25,7 @@
 		715277702BA607C70095B594 /* StiriMDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152776F2BA607C70095B594 /* StiriMDView.swift */; };
 		715277722BA60A4C0095B594 /* StiriMDDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715277712BA60A4C0095B594 /* StiriMDDecoding.swift */; };
 		715277732BA60BA70095B594 /* StiriMDArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = 715277682BA605F60095B594 /* StiriMDArticles.json */; };
+		715277752BA62AD50095B594 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 715277742BA62AD50095B594 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		715277682BA605F60095B594 /* StiriMDArticles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StiriMDArticles.json; sourceTree = "<group>"; };
 		7152776F2BA607C70095B594 /* StiriMDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StiriMDView.swift; sourceTree = "<group>"; };
 		715277712BA60A4C0095B594 /* StiriMDDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StiriMDDecoding.swift; sourceTree = "<group>"; };
+		715277742BA62AD50095B594 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				7152776D2BA607300095B594 /* Data */,
 				712113D92BA4689200E7F28B /* Preview Content */,
 				712113D72BA4689200E7F28B /* Assets.xcassets */,
+				715277742BA62AD50095B594 /* GoogleService-Info.plist */,
 			);
 			path = Moldcell_Hackathon;
 			sourceTree = "<group>";
@@ -298,6 +301,9 @@
 				Base,
 			);
 			mainGroup = 712113C72BA4689100E7F28B;
+			packageReferences = (
+				715277762BA62C510095B594 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 712113D12BA4689100E7F28B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -316,6 +322,7 @@
 			files = (
 				712113DB2BA4689200E7F28B /* Preview Assets.xcassets in Resources */,
 				712113D82BA4689200E7F28B /* Assets.xcassets in Resources */,
+				715277752BA62AD50095B594 /* GoogleService-Info.plist in Resources */,
 				71043B112BA4C53D003FD1B4 /* BalooBhai-Regular.ttf in Resources */,
 				715277732BA60BA70095B594 /* StiriMDArticles.json in Resources */,
 			);
@@ -692,6 +699,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		715277762BA62C510095B594 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 712113C82BA4689100E7F28B /* Project object */;
 }
