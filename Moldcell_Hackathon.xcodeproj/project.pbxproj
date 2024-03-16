@@ -10,7 +10,6 @@
 		71043B0E2BA4C17F003FD1B4 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71043B0D2BA4C17F003FD1B4 /* LoginPage.swift */; };
 		71043B112BA4C53D003FD1B4 /* BalooBhai-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71043B102BA4C53D003FD1B4 /* BalooBhai-Regular.ttf */; };
 		712113D42BA4689100E7F28B /* Moldcell_HackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712113D32BA4689100E7F28B /* Moldcell_HackathonApp.swift */; };
-		712113D62BA4689100E7F28B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712113D52BA4689100E7F28B /* ContentView.swift */; };
 		712113D82BA4689200E7F28B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712113D72BA4689200E7F28B /* Assets.xcassets */; };
 		712113DB2BA4689200E7F28B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712113DA2BA4689200E7F28B /* Preview Assets.xcassets */; };
 		712113E52BA4689200E7F28B /* Moldcell_HackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712113E42BA4689200E7F28B /* Moldcell_HackathonTests.swift */; };
@@ -22,6 +21,7 @@
 		7152775F2BA5A6FC0095B594 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152775E2BA5A6FC0095B594 /* HomeView.swift */; };
 		715277612BA5A7080095B594 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715277602BA5A7080095B594 /* SettingsView.swift */; };
 		715277632BA5A7130095B594 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715277622BA5A7130095B594 /* ProfileView.swift */; };
+		715277672BA6053C0095B594 /* textToSpeechTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715277662BA6053C0095B594 /* textToSpeechTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 		71043B122BA4C66C003FD1B4 /* Moldcell-Hackathon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Moldcell-Hackathon-Info.plist"; sourceTree = SOURCE_ROOT; };
 		712113D02BA4689100E7F28B /* SilverLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilverLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		712113D32BA4689100E7F28B /* Moldcell_HackathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moldcell_HackathonApp.swift; sourceTree = "<group>"; };
-		712113D52BA4689100E7F28B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		712113D72BA4689200E7F28B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		712113DA2BA4689200E7F28B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		712113E02BA4689200E7F28B /* Moldcell_HackathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Moldcell_HackathonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +60,8 @@
 		7152775E2BA5A6FC0095B594 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		715277602BA5A7080095B594 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		715277622BA5A7130095B594 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		715277662BA6053C0095B594 /* textToSpeechTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textToSpeechTest.swift; sourceTree = "<group>"; };
+		715277682BA605F60095B594 /* StiriMDArticles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StiriMDArticles.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,18 +121,14 @@
 			isa = PBXGroup;
 			children = (
 				71043B122BA4C66C003FD1B4 /* Moldcell-Hackathon-Info.plist */,
-				71043B0F2BA4C4B8003FD1B4 /* Fonts */,
 				712113D32BA4689100E7F28B /* Moldcell_HackathonApp.swift */,
-				712113D52BA4689100E7F28B /* ContentView.swift */,
-				71043B0D2BA4C17F003FD1B4 /* LoginPage.swift */,
-				715277582BA4D5540095B594 /* RegistrationPage.swift */,
-				7152775A2BA5A28D0095B594 /* TermsandConditions.swift */,
-				7152775C2BA5A41B0095B594 /* MainPage.swift */,
-				7152775E2BA5A6FC0095B594 /* HomeView.swift */,
-				715277602BA5A7080095B594 /* SettingsView.swift */,
-				715277622BA5A7130095B594 /* ProfileView.swift */,
-				712113D72BA4689200E7F28B /* Assets.xcassets */,
+				71043B0F2BA4C4B8003FD1B4 /* Fonts */,
+				715277692BA606BF0095B594 /* Login Pages */,
+				7152776B2BA606FB0095B594 /* Main Page Views */,
+				7152776C2BA6071A0095B594 /* TestViews */,
+				7152776D2BA607300095B594 /* Data */,
 				712113D92BA4689200E7F28B /* Preview Content */,
+				712113D72BA4689200E7F28B /* Assets.xcassets */,
 			);
 			path = Moldcell_Hackathon;
 			sourceTree = "<group>";
@@ -159,6 +156,43 @@
 				712113F02BA4689200E7F28B /* Moldcell_HackathonUITestsLaunchTests.swift */,
 			);
 			path = Moldcell_HackathonUITests;
+			sourceTree = "<group>";
+		};
+		715277692BA606BF0095B594 /* Login Pages */ = {
+			isa = PBXGroup;
+			children = (
+				71043B0D2BA4C17F003FD1B4 /* LoginPage.swift */,
+				715277582BA4D5540095B594 /* RegistrationPage.swift */,
+				7152775A2BA5A28D0095B594 /* TermsandConditions.swift */,
+			);
+			path = "Login Pages";
+			sourceTree = "<group>";
+		};
+		7152776B2BA606FB0095B594 /* Main Page Views */ = {
+			isa = PBXGroup;
+			children = (
+				7152775C2BA5A41B0095B594 /* MainPage.swift */,
+				7152775E2BA5A6FC0095B594 /* HomeView.swift */,
+				715277602BA5A7080095B594 /* SettingsView.swift */,
+				715277622BA5A7130095B594 /* ProfileView.swift */,
+			);
+			path = "Main Page Views";
+			sourceTree = "<group>";
+		};
+		7152776C2BA6071A0095B594 /* TestViews */ = {
+			isa = PBXGroup;
+			children = (
+				715277662BA6053C0095B594 /* textToSpeechTest.swift */,
+			);
+			path = TestViews;
+			sourceTree = "<group>";
+		};
+		7152776D2BA607300095B594 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				715277682BA605F60095B594 /* StiriMDArticles.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,9 +330,9 @@
 				715277632BA5A7130095B594 /* ProfileView.swift in Sources */,
 				715277612BA5A7080095B594 /* SettingsView.swift in Sources */,
 				7152775F2BA5A6FC0095B594 /* HomeView.swift in Sources */,
-				712113D62BA4689100E7F28B /* ContentView.swift in Sources */,
 				715277592BA4D5540095B594 /* RegistrationPage.swift in Sources */,
 				71043B0E2BA4C17F003FD1B4 /* LoginPage.swift in Sources */,
+				715277672BA6053C0095B594 /* textToSpeechTest.swift in Sources */,
 				712113D42BA4689100E7F28B /* Moldcell_HackathonApp.swift in Sources */,
 				7152775D2BA5A41B0095B594 /* MainPage.swift in Sources */,
 			);

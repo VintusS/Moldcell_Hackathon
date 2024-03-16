@@ -29,6 +29,17 @@ struct HomeView: View {
             "Rază de soare!"
         ]
     
+    struct NewsPlatform {
+        var name: String
+        var imageName: String
+    }
+
+    let newsPlatforms = [
+        NewsPlatform(name: "Stiri.md", imageName: "stiriLogo"),
+        NewsPlatform(name: "Jurnal TV", imageName: "jurnalLogo"),
+        NewsPlatform(name: "Diez.md", imageName: "diezLogo")
+    ]
+    
     init() {
         let currentDayTime = getTimeOfDay()
         _timeOfDay = State(initialValue: currentDayTime)
@@ -165,22 +176,23 @@ struct HomeView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 20) {
-                        ForEach(0..<4) { index in
-                            VStack {
-                                Image(systemName: "photo")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 40, height: 40)
-                                    .foregroundColor(.white)
-                                Text("Platforma \(index + 1)")
-                                    .foregroundColor(.white)
-                                    .font(.custom("BalooBhai-Regular", size: 18))
+                            ForEach(newsPlatforms, id: \.name) { platform in
+                                VStack {
+                                    Image(platform.imageName)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 70, height: 70)
+                                        .foregroundColor(.white)
+                                        .cornerRadius(10)
+                                    Text(platform.name)
+                                        .foregroundColor(.white)
+                                        .font(.custom("BalooBhai-Regular", size: 25))
+                                }
+                                .frame(width: 200, height: 150)
+                                .background(RoundedRectangle(cornerRadius: 10).fill(Color.blue))
+                                .shadow(radius: 3)
                             }
-                            .frame(width: 200, height: 150)
-                            .background(RoundedRectangle(cornerRadius: 10).fill(Color.blue))
-                            .shadow(radius: 3)
                         }
-                    }
                     .padding(.leading, 35)
                     .padding(.trailing, 35)
                     .padding(.bottom, 0)
