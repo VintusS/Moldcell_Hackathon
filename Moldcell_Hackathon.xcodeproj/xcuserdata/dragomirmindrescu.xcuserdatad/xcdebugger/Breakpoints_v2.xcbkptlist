@@ -14,8 +14,8 @@
             filePath = "Moldcell_Hackathon/RegistrationPage.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "customSecureField(placeholder:text:isFieldValid:)"
             landmarkType = "7">
          </BreakpointContent>

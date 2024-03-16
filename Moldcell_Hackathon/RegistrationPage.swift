@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct RegistrationPage: View {
-    @State private var name: String = ""
+    @AppStorage("Nume") var name: String = ""
     @State private var phoneNumber: String = ""
     @State private var confirmPhoneNumber: String = ""
     @State private var password: String = ""
     @State private var confirmPassword: String = ""
     @State private var isAgreedToTerms = false
     @State private var showValidationErrors: Bool = false
+    @State private var navigateToMain = false
 
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
@@ -59,9 +60,13 @@ struct RegistrationPage: View {
             Button("INREGISTREAZA-TE ACUM") {
                 showValidationErrors = name.isEmpty || phoneNumber.isEmpty || confirmPhoneNumber.isEmpty || password.isEmpty || confirmPassword.isEmpty
                 if !showValidationErrors {
-                    // Proceed with login
+                    navigateToMain = true
                 }
             }
+            .background(
+                NavigationLink("", destination: MainPage(), isActive: $navigateToMain)
+                .hidden()
+            )
             .font(.custom("BalooBhai-Regular", size: 20))
             .frame(width: 300, height: 60)
             .background(Color.blue)

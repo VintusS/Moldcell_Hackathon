@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @AppStorage("Nume") var name: String = ""
     @AppStorage("customPhoneNumber") var customPhoneNumber: String = ""
     @State private var timeOfDay: String
     @State private var feelingText: String
@@ -45,7 +46,7 @@ struct HomeView: View {
                             .frame(width: 80, height: 50)
                             .clipShape(Circle())
                         
-                        Text("Profile Name") // Replace with the actual profile name
+                        Text(name)
                             .font(.custom("BalooBhai-Regular", size: 18))
                     }
                     
