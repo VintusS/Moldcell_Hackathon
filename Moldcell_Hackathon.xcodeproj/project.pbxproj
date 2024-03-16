@@ -34,6 +34,9 @@
 		715277722BA60A4C0095B594 /* StiriMDDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715277712BA60A4C0095B594 /* StiriMDDecoding.swift */; };
 		715277732BA60BA70095B594 /* StiriMDArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = 715277682BA605F60095B594 /* StiriMDArticles.json */; };
 		715277752BA62AD50095B594 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 715277742BA62AD50095B594 /* GoogleService-Info.plist */; };
+		71FD19E72BA648700079CB6F /* starpiori-default-rtdb-export.json in Resources */ = {isa = PBXBuildFile; fileRef = 71FD19E62BA648700079CB6F /* starpiori-default-rtdb-export.json */; };
+		71FD19E92BA649D20079CB6F /* JurnalTVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD19E82BA649D20079CB6F /* JurnalTVView.swift */; };
+		71FD19EB2BA649DC0079CB6F /* DiezView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD19EA2BA649DC0079CB6F /* DiezView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		7152776F2BA607C70095B594 /* StiriMDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StiriMDView.swift; sourceTree = "<group>"; };
 		715277712BA60A4C0095B594 /* StiriMDDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StiriMDDecoding.swift; sourceTree = "<group>"; };
 		715277742BA62AD50095B594 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		71FD19E62BA648700079CB6F /* starpiori-default-rtdb-export.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "starpiori-default-rtdb-export.json"; sourceTree = "<group>"; };
+		71FD19E82BA649D20079CB6F /* JurnalTVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurnalTVView.swift; sourceTree = "<group>"; };
+		71FD19EA2BA649DC0079CB6F /* DiezView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiezView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				715277682BA605F60095B594 /* StiriMDArticles.json */,
+				71FD19E62BA648700079CB6F /* starpiori-default-rtdb-export.json */,
 				715277712BA60A4C0095B594 /* StiriMDDecoding.swift */,
 			);
 			path = Data;
@@ -233,6 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				7152776F2BA607C70095B594 /* StiriMDView.swift */,
+				71FD19E82BA649D20079CB6F /* JurnalTVView.swift */,
+				71FD19EA2BA649DC0079CB6F /* DiezView.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -359,6 +368,7 @@
 				715277752BA62AD50095B594 /* GoogleService-Info.plist in Resources */,
 				71043B112BA4C53D003FD1B4 /* BalooBhai-Regular.ttf in Resources */,
 				715277732BA60BA70095B594 /* StiriMDArticles.json in Resources */,
+				71FD19E72BA648700079CB6F /* starpiori-default-rtdb-export.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +395,8 @@
 			files = (
 				715277722BA60A4C0095B594 /* StiriMDDecoding.swift in Sources */,
 				7152775B2BA5A28D0095B594 /* TermsandConditions.swift in Sources */,
+				71FD19E92BA649D20079CB6F /* JurnalTVView.swift in Sources */,
+				71FD19EB2BA649DC0079CB6F /* DiezView.swift in Sources */,
 				715277632BA5A7130095B594 /* ProfileView.swift in Sources */,
 				715277612BA5A7080095B594 /* SettingsView.swift in Sources */,
 				7152775F2BA5A6FC0095B594 /* HomeView.swift in Sources */,
