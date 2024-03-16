@@ -11,7 +11,7 @@ import SwiftUI
 struct Moldcell_HackathonApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginPage()
+            MainPage()
         }
     }
 }
