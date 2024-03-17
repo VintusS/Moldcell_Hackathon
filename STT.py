@@ -1,7 +1,6 @@
-import argparse
 from google.cloud import speech
 
-class STT:
+class SpeechToText:
     def __init__(self):
         pass
 
