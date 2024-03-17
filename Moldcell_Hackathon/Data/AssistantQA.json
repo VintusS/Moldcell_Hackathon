@@ -1,0 +1,38 @@
+[
+    {
+        "question": "Salut",
+        "answer": "Salut. Sunt asistentul SilverLink. Cu ce vă pot ajuta?"
+    },
+    {
+        "question": "Cum pot verifica soldul pensiei mele",
+        "answer": "Puteți verifica soldul pensiei accedând site-ul Casei Naționale de Asigurări Sociale și autentificându-vă în contul personal sau contactând direct oficiul teritorial al CNAS."
+    },
+    {
+        "question": "Unde pot găsi orarul transportului public din Chișinău",
+        "answer": "Orarul transportului public din Chișinău poate fi găsit pe site-ul oficial al Primăriei Chișinău sau la stațiile de autobuz din oraș."
+    },
+    {
+        "question": "Cum pot beneficia de asistență medicală gratuită",
+        "answer": "Asistența medicală gratuită este asigurată pentru toți cetățenii în vârstă prin sistemul de asigurări de sănătate. Trebuie să vă adresați la medicul de familie pentru consultații și trimitere către specialiști."
+    },
+    {
+        "question": "Ce programe sociale sunt disponibile pentru pensionari",
+        "answer": "Există diverse programe sociale pentru pensionari, inclusiv ajutoare pentru încălzirea locuinței, reduceri la transportul public și programe de asistență medicală. Informații detaliate pot fi obținute de la autoritățile locale sau oficiile de asistență socială."
+    },
+    {
+        "question": "Cum pot aplica pentru reabilitarea termică a apartamentului",
+        "answer": "Pentru a aplica pentru reabilitarea termică, trebuie să contactați administrația locală sau să vizitați site-ul oficial al guvernului pentru a afla despre programele curente și cerințele de eligibilitate."
+    },
+    {
+        "question": "Unde pot găsi activități sau cluburi pentru vârstnici",
+        "answer": "Activități și cluburi pentru vârstnici pot fi găsite în centrele comunitare locale, casele de cultură, sau prin intermediul organizațiilor non-profit care se ocupă de bunăstarea persoanelor în vârstă."
+    },
+    {
+        "question": "Cum pot beneficia de reducere la plata utilităților",
+        "answer": "Reducerile la plata utilităților sunt disponibile pentru persoanele în vârstă cu venituri reduse. Pentru a aplica, trebuie să prezentați documentele necesare la oficiul de asistență socială local."
+    },
+    {
+        "question": "Este posibil să mă re înscriu într-un curs de educație pentru adulți",
+        "answer": "Da, există multe programe de educație pentru adulți, inclusiv cursuri de informatică, limbi străine, sau arte. Puteți căuta informații la centrele educaționale locale sau biblioteci."
+    }
+]
