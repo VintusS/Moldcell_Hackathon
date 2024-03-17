@@ -25,8 +25,16 @@ class InsuranceExpert:
             "temperature": 0.9,
             "top_p": 1
         }
+        with open("stiriMD.json", "r", encoding="utf-8") as f:
+            noutati_pe_azi = json.loads(f.read())
+        
+        links=[]
+        for i in range(0,5):
+            links.append(noutati_pe_azi[i]['Subtitle'])
+
+        linkuri = ' '.join(links)
         chat = chat_model.start_chat(
-        context="""
+        context=f"""
         Te numesti Maria.
         Esti un expert legal si medical care cunoaste la perfecte legile Republicii Moldova,
         in conformitate cu resursele legale existente si publicate in retea.
@@ -58,7 +66,11 @@ class InsuranceExpert:
         Te-as ruga sa nu folosesti liste structurate sau ordonate, deoarece am probleme cu formatarea. Nu folosi notare markdown
         De asemeni, te rog sa nu folosesti asteriscuri sau alte semne de punctuatie pentru a sublinia cuvinte, 
         intrucat rezultatul tau va fi transferat in raspuns sonor, care trebuie sa fie maxim de asemanator unui dialog real.
+        Te rog mult sa folosesti diacritice dupa toate regulile limbii.
+        In caz ca primesti o intrebare despre noutatile de azi, ofera un rezumat simplu la noutatile zile, poti sa le iei de aici:
+        {linkuri}
         """,
+        
         examples=[
             InputOutputTextPair(
                 input_text="""Ce sa fac daca ma dor ochii?""",

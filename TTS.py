@@ -7,8 +7,7 @@ from google.oauth2 import service_account
 import requests
 import playsound
 import base64
-import pygame
-import pygame.mixer
+
 class TextToSpeech:
     def __init__(self) -> None:
         self.__init_config()  # Call the config initialization method
@@ -57,13 +56,5 @@ class TextToSpeech:
         
         print(f"Audio content written to file {output_file}")
         self.__last_output_file = f'/home/flexksx/GitHub/Moldcell_Hackathon/{output_file}'
+
         
-    def stream_synthesize(self, input_text:str):
-        if self.__last_output_file is None:
-            self.synthesize(input_text, "output.mp3")
-        pygame.init()
-        pygame.mixer.init()
-        pygame.mixer.music.load(self.__last_output_file)
-        pygame.mixer.music.play()
-        
-        # playsound.playsound(self.__last_output_file)

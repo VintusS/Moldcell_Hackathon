@@ -10,7 +10,9 @@ class Conversator:
         
     def get_response(self, input_text:str):
         response = self.__ie.get_response(input_text)
-        response = json.loads(response.text)
+        # response = json.loads(response.text)
+        response = json.loads(response.text.encode('utf-8'))
+
         return response['text']
     
     def get_audio_response(self, input_text:str, output_file:str):
