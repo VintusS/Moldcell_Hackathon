@@ -34,9 +34,19 @@
 		715277722BA60A4C0095B594 /* StiriMDDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715277712BA60A4C0095B594 /* StiriMDDecoding.swift */; };
 		715277732BA60BA70095B594 /* StiriMDArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = 715277682BA605F60095B594 /* StiriMDArticles.json */; };
 		715277752BA62AD50095B594 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 715277742BA62AD50095B594 /* GoogleService-Info.plist */; };
-		71FD19E72BA648700079CB6F /* starpiori-default-rtdb-export.json in Resources */ = {isa = PBXBuildFile; fileRef = 71FD19E62BA648700079CB6F /* starpiori-default-rtdb-export.json */; };
+		715F7BED2BA66AE2003AE503 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7BEC2BA66AE2003AE503 /* TextView.swift */; };
+		715F7BEF2BA66AFC003AE503 /* TokenizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7BEE2BA66AFC003AE503 /* TokenizerView.swift */; };
+		715F7BF12BA66B1B003AE503 /* TokenizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7BF02BA66B1B003AE503 /* TokenizerViewModel.swift */; };
+		715F7BF62BA66BA1003AE503 /* GPTEncoder in Frameworks */ = {isa = PBXBuildFile; productRef = 715F7BF52BA66BA1003AE503 /* GPTEncoder */; };
+		715F7C3C2BA671F4003AE503 /* JurnalTVDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7C3B2BA671F4003AE503 /* JurnalTVDecoding.swift */; };
+		715F7C3D2BA67790003AE503 /* JurnalTVArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = 715F7C3A2BA671AD003AE503 /* JurnalTVArticles.json */; };
+		71CE13F52BA661B000B48058 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 71CE13F42BA661B000B48058 /* OpenAISwift */; };
 		71FD19E92BA649D20079CB6F /* JurnalTVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD19E82BA649D20079CB6F /* JurnalTVView.swift */; };
 		71FD19EB2BA649DC0079CB6F /* DiezView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD19EA2BA649DC0079CB6F /* DiezView.swift */; };
+		71FD19F52BA652C40079CB6F /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD19F42BA652C40079CB6F /* SpeechRecognizer.swift */; };
+		71FD19F72BA652EC0079CB6F /* ChatGPTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD19F62BA652EC0079CB6F /* ChatGPTService.swift */; };
+		71FD19F92BA653050079CB6F /* textToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD19F82BA653050079CB6F /* textToSpeech.swift */; };
+		71FD19FB2BA653150079CB6F /* resultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD19FA2BA653150079CB6F /* resultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,9 +90,17 @@
 		7152776F2BA607C70095B594 /* StiriMDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StiriMDView.swift; sourceTree = "<group>"; };
 		715277712BA60A4C0095B594 /* StiriMDDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StiriMDDecoding.swift; sourceTree = "<group>"; };
 		715277742BA62AD50095B594 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		71FD19E62BA648700079CB6F /* starpiori-default-rtdb-export.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "starpiori-default-rtdb-export.json"; sourceTree = "<group>"; };
+		715F7BEC2BA66AE2003AE503 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		715F7BEE2BA66AFC003AE503 /* TokenizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenizerView.swift; sourceTree = "<group>"; };
+		715F7BF02BA66B1B003AE503 /* TokenizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenizerViewModel.swift; sourceTree = "<group>"; };
+		715F7C3A2BA671AD003AE503 /* JurnalTVArticles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JurnalTVArticles.json; sourceTree = "<group>"; };
+		715F7C3B2BA671F4003AE503 /* JurnalTVDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurnalTVDecoding.swift; sourceTree = "<group>"; };
 		71FD19E82BA649D20079CB6F /* JurnalTVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurnalTVView.swift; sourceTree = "<group>"; };
 		71FD19EA2BA649DC0079CB6F /* DiezView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiezView.swift; sourceTree = "<group>"; };
+		71FD19F42BA652C40079CB6F /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		71FD19F62BA652EC0079CB6F /* ChatGPTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTService.swift; sourceTree = "<group>"; };
+		71FD19F82BA653050079CB6F /* textToSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textToSpeech.swift; sourceTree = "<group>"; };
+		71FD19FA2BA653150079CB6F /* resultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +109,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				713946C12BA635D800303851 /* FirebaseDatabaseSwift in Frameworks */,
+				715F7BF62BA66BA1003AE503 /* GPTEncoder in Frameworks */,
 				713946BB2BA635D800303851 /* FirebaseAnalyticsSwift in Frameworks */,
 				713946BD2BA635D800303851 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				713946C52BA635D800303851 /* FirebaseFirestoreSwift in Frameworks */,
+				71CE13F52BA661B000B48058 /* OpenAISwift in Frameworks */,
 				713946BF2BA635D800303851 /* FirebaseDatabase in Frameworks */,
 				713946C72BA635D800303851 /* FirebaseStorage in Frameworks */,
 				713946B92BA635D800303851 /* FirebaseAnalytics in Frameworks */,
@@ -156,9 +176,11 @@
 				715277692BA606BF0095B594 /* Login Pages */,
 				7152776B2BA606FB0095B594 /* Main Page Views */,
 				7152776E2BA607960095B594 /* News */,
+				71FD19ED2BA64D7A0079CB6F /* StSAssistant */,
 				7152776C2BA6071A0095B594 /* TestViews */,
 				7152776D2BA607300095B594 /* Data */,
 				712113D92BA4689200E7F28B /* Preview Content */,
+				71CE143F2BA66A9B00B48058 /* XCAChat */,
 				712113D72BA4689200E7F28B /* Assets.xcassets */,
 				715277742BA62AD50095B594 /* GoogleService-Info.plist */,
 			);
@@ -222,6 +244,10 @@
 			isa = PBXGroup;
 			children = (
 				715277662BA6053C0095B594 /* textToSpeechTest.swift */,
+				71FD19F42BA652C40079CB6F /* SpeechRecognizer.swift */,
+				71FD19F62BA652EC0079CB6F /* ChatGPTService.swift */,
+				71FD19F82BA653050079CB6F /* textToSpeech.swift */,
+				71FD19FA2BA653150079CB6F /* resultView.swift */,
 			);
 			path = TestViews;
 			sourceTree = "<group>";
@@ -230,8 +256,9 @@
 			isa = PBXGroup;
 			children = (
 				715277682BA605F60095B594 /* StiriMDArticles.json */,
-				71FD19E62BA648700079CB6F /* starpiori-default-rtdb-export.json */,
 				715277712BA60A4C0095B594 /* StiriMDDecoding.swift */,
+				715F7C3A2BA671AD003AE503 /* JurnalTVArticles.json */,
+				715F7C3B2BA671F4003AE503 /* JurnalTVDecoding.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -244,6 +271,23 @@
 				71FD19EA2BA649DC0079CB6F /* DiezView.swift */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		71CE143F2BA66A9B00B48058 /* XCAChat */ = {
+			isa = PBXGroup;
+			children = (
+				715F7BEC2BA66AE2003AE503 /* TextView.swift */,
+				715F7BEE2BA66AFC003AE503 /* TokenizerView.swift */,
+				715F7BF02BA66B1B003AE503 /* TokenizerViewModel.swift */,
+			);
+			path = XCAChat;
+			sourceTree = "<group>";
+		};
+		71FD19ED2BA64D7A0079CB6F /* StSAssistant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StSAssistant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +315,8 @@
 				713946C22BA635D800303851 /* FirebaseFirestore */,
 				713946C42BA635D800303851 /* FirebaseFirestoreSwift */,
 				713946C62BA635D800303851 /* FirebaseStorage */,
+				71CE13F42BA661B000B48058 /* OpenAISwift */,
+				715F7BF52BA66BA1003AE503 /* GPTEncoder */,
 			);
 			productName = Moldcell_Hackathon;
 			productReference = 712113D02BA4689100E7F28B /* SilverLink.app */;
@@ -346,6 +392,8 @@
 			mainGroup = 712113C72BA4689100E7F28B;
 			packageReferences = (
 				715277762BA62C510095B594 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				71BCB98E2BA660FC0045A8BD /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+				715F7BF42BA66BA1003AE503 /* XCRemoteSwiftPackageReference "GPTEncoder" */,
 			);
 			productRefGroup = 712113D12BA4689100E7F28B /* Products */;
 			projectDirPath = "";
@@ -365,10 +413,10 @@
 			files = (
 				712113DB2BA4689200E7F28B /* Preview Assets.xcassets in Resources */,
 				712113D82BA4689200E7F28B /* Assets.xcassets in Resources */,
+				715F7C3D2BA67790003AE503 /* JurnalTVArticles.json in Resources */,
 				715277752BA62AD50095B594 /* GoogleService-Info.plist in Resources */,
 				71043B112BA4C53D003FD1B4 /* BalooBhai-Regular.ttf in Resources */,
 				715277732BA60BA70095B594 /* StiriMDArticles.json in Resources */,
-				71FD19E72BA648700079CB6F /* starpiori-default-rtdb-export.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,17 +441,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71FD19FB2BA653150079CB6F /* resultView.swift in Sources */,
 				715277722BA60A4C0095B594 /* StiriMDDecoding.swift in Sources */,
+				715F7BF12BA66B1B003AE503 /* TokenizerViewModel.swift in Sources */,
 				7152775B2BA5A28D0095B594 /* TermsandConditions.swift in Sources */,
 				71FD19E92BA649D20079CB6F /* JurnalTVView.swift in Sources */,
 				71FD19EB2BA649DC0079CB6F /* DiezView.swift in Sources */,
+				71FD19F72BA652EC0079CB6F /* ChatGPTService.swift in Sources */,
 				715277632BA5A7130095B594 /* ProfileView.swift in Sources */,
 				715277612BA5A7080095B594 /* SettingsView.swift in Sources */,
 				7152775F2BA5A6FC0095B594 /* HomeView.swift in Sources */,
+				715F7C3C2BA671F4003AE503 /* JurnalTVDecoding.swift in Sources */,
+				71FD19F52BA652C40079CB6F /* SpeechRecognizer.swift in Sources */,
 				715277592BA4D5540095B594 /* RegistrationPage.swift in Sources */,
 				71043B0E2BA4C17F003FD1B4 /* LoginPage.swift in Sources */,
 				715277672BA6053C0095B594 /* textToSpeechTest.swift in Sources */,
+				715F7BEF2BA66AFC003AE503 /* TokenizerView.swift in Sources */,
 				715277702BA607C70095B594 /* StiriMDView.swift in Sources */,
+				71FD19F92BA653050079CB6F /* textToSpeech.swift in Sources */,
+				715F7BED2BA66AE2003AE503 /* TextView.swift in Sources */,
 				712113D42BA4689100E7F28B /* Moldcell_HackathonApp.swift in Sources */,
 				7152775D2BA5A41B0095B594 /* MainPage.swift in Sources */,
 			);
@@ -574,9 +630,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Moldcell-Hackathon-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SilverLink;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Our app needs Camera Access for adding your profile picture and adding internal photo galery for you and your friends/family";
 				INFOPLIST_KEY_NSContactsUsageDescription = "Our app needs access to your contacts to help you connect with friends.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone to capture your voice for speech recognition.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Our app needs Photo Library Access for adding your profile picture and setting internal photo galery for you and your friends/family";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition to convert your speech into text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -608,9 +667,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Moldcell-Hackathon-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SilverLink;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Our app needs Camera Access for adding your profile picture and adding internal photo galery for you and your friends/family";
 				INFOPLIST_KEY_NSContactsUsageDescription = "Our app needs access to your contacts to help you connect with friends.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone to capture your voice for speech recognition.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Our app needs Photo Library Access for adding your profile picture and setting internal photo galery for you and your friends/family";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition to convert your speech into text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -755,6 +817,22 @@
 				minimumVersion = 10.22.1;
 			};
 		};
+		715F7BF42BA66BA1003AE503 /* XCRemoteSwiftPackageReference "GPTEncoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/GPTEncoder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+		71BCB98E2BA660FC0045A8BD /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -797,6 +875,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 715277762BA62C510095B594 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		715F7BF52BA66BA1003AE503 /* GPTEncoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 715F7BF42BA66BA1003AE503 /* XCRemoteSwiftPackageReference "GPTEncoder" */;
+			productName = GPTEncoder;
+		};
+		71CE13F42BA661B000B48058 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71BCB98E2BA660FC0045A8BD /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
