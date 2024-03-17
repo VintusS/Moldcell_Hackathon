@@ -8,81 +8,96 @@
 import SwiftUI
 
 struct GalleryView: View {
-    @StateObject var multipeerSession = MultipeerSession()
     @State private var isShowingImagePicker = false
     @State private var selectedImage: UIImage?
     @State private var imageCaption: String = ""
+    @State private var showToast = false
+
+    let customFont: String = "BalooBhai-Regular"
 
     var body: some View {
         VStack {
-            // Top bar for hosting and joining session
-            HStack {
-                Button("Host Session") {
-                    multipeerSession.startHosting()
-                }
-                .frame(maxWidth: .infinity)
+            Spacer()
 
-                Button("Join Session") {
-                    multipeerSession.joinSession()
-                }
-                .frame(maxWidth: .infinity)
+            if let image = selectedImage {
+                Image(uiImage: image)
+                    .resizable()
+                    .scaledToFit()
+
+                TextField("Spune ce gandesti...", text: $imageCaption)
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 2)
+                    .font(.custom(customFont, size: 18))
+                    .padding()
+            } else {
+                Text("No image selected")
+                    .font(.custom(customFont, size: 18))
+                    .foregroundColor(.gray)
             }
+
+            Spacer()
+
+            Button("FA O POZA") {
+                isShowingImagePicker = true
+            }
+            .font(.custom(customFont, size: 20))
+            .frame(width: 300, height: 60)
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(30)
+            .shadow(color: Color.black.opacity(0.12), radius: 10, x: 0, y: 3)
             .padding()
 
-            Spacer()
-
-            // Image and caption display
-            if let image = multipeerSession.receivedImage {
-                VStack {
-                    Image(uiImage: image)
-                        .resizable()
-                        .scaledToFit()
-
-//                    Text(multipeerSession.receivedCaption)
-//                        .font(.caption)
-//                        .padding()
-                }
-            }
-
-            Spacer()
-
-            // Image picker, caption entry, and send button
-            VStack {
-                Button("Choose Image") {
-                    isShowingImagePicker = true
-                }
-                .sheet(isPresented: $isShowingImagePicker) {
-                    ImagePicker(selectedImage: $selectedImage, sourceType: .photoLibrary)
-                }
-
-                TextField("Enter caption...", text: $imageCaption)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-
-                if let selectedImage = selectedImage {
-                    Button("Send Image") {
-                        if let imageData = selectedImage.jpegData(compressionQuality: 0.8) {
-                            // Combine the image data and caption into one data object
-                            let combinedData = ImageData(image: imageData, caption: imageCaption)
-                            if let encodedData = try? JSONEncoder().encode(combinedData) {
-                                try? multipeerSession.mcSession.send(encodedData, toPeers: multipeerSession.mcSession.connectedPeers, with: .reliable)
-                            }
+            if selectedImage != nil {
+                Button("TRIMITE IMAGINEA") {
+                    withAnimation {
+                        showToast = true
+                        selectedImage = nil // Simulate sending the image and then deleting it
+                    }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                        withAnimation {
+                            showToast = false
                         }
                     }
                 }
+                .font(.custom(customFont, size: 20))
+                .frame(width: 300, height: 60)
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(30)
+                .shadow(color: Color.black.opacity(0.12), radius: 10, x: 0, y: 3)
+                .padding()
             }
-            .padding()
-
-            Spacer()
+        }
+        .overlay(
+            ToastView(show: $showToast)
+                .animation(.easeInOut, value: showToast)
+                .opacity(showToast ? 1 : 0),
+            alignment: .top
+        )
+        .sheet(isPresented: $isShowingImagePicker) {
+            ImagePicker(selectedImage: $selectedImage, sourceType: .camera)
         }
     }
 }
 
-struct ImageData: Codable {
-    let image: Data
-    let caption: String
+struct ToastView: View {
+    @Binding var show: Bool
+    let customFont: String = "BalooBhai-Regular"
+
+    var body: some View {
+        if show {
+            Text("IMAGINEA TRIMISA CU SUCCES")
+                .font(.custom(customFont, size: 18))
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(25)
+                .transition(.slide)
+                .animation(.easeInOut, value: show)
+        }
+    }
 }
 
-#Preview {
-    GalleryView()
-}
