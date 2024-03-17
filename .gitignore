@@ -1,3 +1,5 @@
-venv/
+# created by virtualenv automatically
+*
+google-cloud-sdk
+.env
 moldcell-hackaton-pinguinii-3ac65abdfff7.json
-sync-request.json
