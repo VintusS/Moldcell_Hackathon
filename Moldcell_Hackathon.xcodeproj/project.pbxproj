@@ -48,6 +48,7 @@
 		715F7C492BA68EDA003AE503 /* AssistantQA.json in Resources */ = {isa = PBXBuildFile; fileRef = 715F7C462BA68E64003AE503 /* AssistantQA.json */; };
 		715F7C4C2BA69EB8003AE503 /* MultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7C4B2BA69EB8003AE503 /* MultipeerManager.swift */; };
 		715F7C522BA6ABE0003AE503 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7C512BA6ABE0003AE503 /* ImagePicker.swift */; };
+		715F7C542BA6D8A8003AE503 /* tv8.json in Resources */ = {isa = PBXBuildFile; fileRef = 715F7C532BA6D8A8003AE503 /* tv8.json */; };
 		71CE13F52BA661B000B48058 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 71CE13F42BA661B000B48058 /* OpenAISwift */; };
 		71FD19E92BA649D20079CB6F /* JurnalTVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD19E82BA649D20079CB6F /* JurnalTVView.swift */; };
 		71FD19EB2BA649DC0079CB6F /* DiezView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD19EA2BA649DC0079CB6F /* DiezView.swift */; };
@@ -111,6 +112,7 @@
 		715F7C472BA68EB9003AE503 /* AssistantQADecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantQADecoding.swift; sourceTree = "<group>"; };
 		715F7C4B2BA69EB8003AE503 /* MultipeerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerManager.swift; sourceTree = "<group>"; };
 		715F7C512BA6ABE0003AE503 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		715F7C532BA6D8A8003AE503 /* tv8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tv8.json; sourceTree = "<group>"; };
 		71FD19E82BA649D20079CB6F /* JurnalTVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurnalTVView.swift; sourceTree = "<group>"; };
 		71FD19EA2BA649DC0079CB6F /* DiezView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiezView.swift; sourceTree = "<group>"; };
 		71FD19F42BA652C40079CB6F /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 		7152776D2BA607300095B594 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				715F7C532BA6D8A8003AE503 /* tv8.json */,
 				715277682BA605F60095B594 /* StiriMDArticles.json */,
 				715277712BA60A4C0095B594 /* StiriMDDecoding.swift */,
 				715F7C3A2BA671AD003AE503 /* JurnalTVArticles.json */,
@@ -446,6 +449,7 @@
 			files = (
 				712113DB2BA4689200E7F28B /* Preview Assets.xcassets in Resources */,
 				712113D82BA4689200E7F28B /* Assets.xcassets in Resources */,
+				715F7C542BA6D8A8003AE503 /* tv8.json in Resources */,
 				715F7C3D2BA67790003AE503 /* JurnalTVArticles.json in Resources */,
 				715277752BA62AD50095B594 /* GoogleService-Info.plist in Resources */,
 				715F7C492BA68EDA003AE503 /* AssistantQA.json in Resources */,
