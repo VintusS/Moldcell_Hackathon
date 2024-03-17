@@ -9,6 +9,11 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_nearby-devices._tcp</string>
+		<string></string>
+	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>BalooBhai-Regular.ttf</string>

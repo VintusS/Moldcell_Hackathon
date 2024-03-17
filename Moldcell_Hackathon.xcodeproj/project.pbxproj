@@ -46,6 +46,8 @@
 		715F7C452BA6791D003AE503 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7C442BA6791D003AE503 /* GalleryView.swift */; };
 		715F7C482BA68EB9003AE503 /* AssistantQADecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7C472BA68EB9003AE503 /* AssistantQADecoding.swift */; };
 		715F7C492BA68EDA003AE503 /* AssistantQA.json in Resources */ = {isa = PBXBuildFile; fileRef = 715F7C462BA68E64003AE503 /* AssistantQA.json */; };
+		715F7C4C2BA69EB8003AE503 /* MultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7C4B2BA69EB8003AE503 /* MultipeerManager.swift */; };
+		715F7C522BA6ABE0003AE503 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7C512BA6ABE0003AE503 /* ImagePicker.swift */; };
 		71CE13F52BA661B000B48058 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 71CE13F42BA661B000B48058 /* OpenAISwift */; };
 		71FD19E92BA649D20079CB6F /* JurnalTVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD19E82BA649D20079CB6F /* JurnalTVView.swift */; };
 		71FD19EB2BA649DC0079CB6F /* DiezView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD19EA2BA649DC0079CB6F /* DiezView.swift */; };
@@ -107,6 +109,8 @@
 		715F7C442BA6791D003AE503 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		715F7C462BA68E64003AE503 /* AssistantQA.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AssistantQA.json; sourceTree = "<group>"; };
 		715F7C472BA68EB9003AE503 /* AssistantQADecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantQADecoding.swift; sourceTree = "<group>"; };
+		715F7C4B2BA69EB8003AE503 /* MultipeerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerManager.swift; sourceTree = "<group>"; };
+		715F7C512BA6ABE0003AE503 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		71FD19E82BA649D20079CB6F /* JurnalTVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurnalTVView.swift; sourceTree = "<group>"; };
 		71FD19EA2BA649DC0079CB6F /* DiezView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiezView.swift; sourceTree = "<group>"; };
 		71FD19F42BA652C40079CB6F /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
@@ -187,6 +191,7 @@
 				71043B0F2BA4C4B8003FD1B4 /* Fonts */,
 				715277692BA606BF0095B594 /* Login Pages */,
 				7152776B2BA606FB0095B594 /* Main Page Views */,
+				715F7C4A2BA69E9D003AE503 /* Multipeer */,
 				7152776E2BA607960095B594 /* News */,
 				71FD19ED2BA64D7A0079CB6F /* StSAssistant */,
 				7152776C2BA6071A0095B594 /* TestViews */,
@@ -289,6 +294,16 @@
 				71FD19EA2BA649DC0079CB6F /* DiezView.swift */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		715F7C4A2BA69E9D003AE503 /* Multipeer */ = {
+			isa = PBXGroup;
+			children = (
+				715F7C4B2BA69EB8003AE503 /* MultipeerManager.swift */,
+				715F7C512BA6ABE0003AE503 /* ImagePicker.swift */,
+			);
+			name = Multipeer;
+			path = "Main Page Views";
 			sourceTree = "<group>";
 		};
 		71CE143F2BA66A9B00B48058 /* XCAChat */ = {
@@ -464,6 +479,7 @@
 				715F7C402BA6781A003AE503 /* DiezDecoding.swift in Sources */,
 				715F7C482BA68EB9003AE503 /* AssistantQADecoding.swift in Sources */,
 				71FD19FB2BA653150079CB6F /* resultView.swift in Sources */,
+				715F7C522BA6ABE0003AE503 /* ImagePicker.swift in Sources */,
 				715277722BA60A4C0095B594 /* StiriMDDecoding.swift in Sources */,
 				715F7BF12BA66B1B003AE503 /* TokenizerViewModel.swift in Sources */,
 				7152775B2BA5A28D0095B594 /* TermsandConditions.swift in Sources */,
@@ -473,6 +489,7 @@
 				71FD19F72BA652EC0079CB6F /* ChatGPTService.swift in Sources */,
 				715277632BA5A7130095B594 /* ProfileView.swift in Sources */,
 				715277612BA5A7080095B594 /* SettingsView.swift in Sources */,
+				715F7C4C2BA69EB8003AE503 /* MultipeerManager.swift in Sources */,
 				7152775F2BA5A6FC0095B594 /* HomeView.swift in Sources */,
 				715F7C3C2BA671F4003AE503 /* JurnalTVDecoding.swift in Sources */,
 				715F7C432BA6790D003AE503 /* AssistantView.swift in Sources */,
@@ -657,6 +674,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Our app needs Camera Access for adding your profile picture and adding internal photo galery for you and your friends/family";
 				INFOPLIST_KEY_NSContactsUsageDescription = "Our app needs access to your contacts to help you connect with friends.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "We need this for Multipeer connectivity";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone to capture your voice for speech recognition.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Our app needs Photo Library Access for adding your profile picture and setting internal photo galery for you and your friends/family";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition to convert your speech into text.";
@@ -694,6 +712,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Our app needs Camera Access for adding your profile picture and adding internal photo galery for you and your friends/family";
 				INFOPLIST_KEY_NSContactsUsageDescription = "Our app needs access to your contacts to help you connect with friends.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "We need this for Multipeer connectivity";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone to capture your voice for speech recognition.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Our app needs Photo Library Access for adding your profile picture and setting internal photo galery for you and your friends/family";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition to convert your speech into text.";

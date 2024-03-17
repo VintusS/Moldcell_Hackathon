@@ -44,7 +44,7 @@ struct DiezView: View {
             .tabViewStyle(.page(indexDisplayMode: .never))
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    Text("Diez.md")
+                    Text("TV8.md")
                         .font(.custom("BalooBhai-regular", size: 25))
                         .frame(maxWidth: .infinity)
                 }

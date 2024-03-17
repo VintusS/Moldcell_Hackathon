@@ -37,7 +37,7 @@ struct HomeView: View {
     let newsPlatforms = [
         NewsPlatform(name: "Stiri.md", imageName: "stiriLogo"),
         NewsPlatform(name: "Jurnal TV", imageName: "jurnalLogo"),
-        NewsPlatform(name: "Diez.md", imageName: "diezLogo")
+        NewsPlatform(name: "TV8", imageName: "tv8Logo")
     ]
     
     init() {
@@ -218,7 +218,7 @@ private func destinationView(for name: String) -> some View {
         return AnyView(StiriMDView())
     case "Jurnal TV":
         return AnyView(JurnalTVView())
-    case "Diez.md":
+    case "TV8":
         return AnyView(DiezView())
     default:
         return AnyView(Text("Unknown Platform"))
