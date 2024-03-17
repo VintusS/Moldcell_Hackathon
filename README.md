@@ -84,9 +84,12 @@ Talking in more detail about the challenges the elderly people encounter and the
 	**Security Considerations**
 	- Phone numbers offer a simple and widely recognized method of identification.
 	- The user's password is essential to safeguarding their account and should be kept confidential.
-	![[IMG/lg1.jpg]]
+	
+ <p align="center">
+  <img width="300" height="640" src="IMG/log1.jpg">
+	<img width="300" height="640" src="IMG/reg1.jpg">
+</p>
 
-	![[IMG/reg1.jpg]]
 2. **A Clear and User-Friendly Home Screen**
 	The Silverlink app is designed with seniors in mind, ensuring a clear and uncluttered interface. The home page presents the app's core functionalities in a way that is easy to understand and navigate.
 	**Large, Recognizable Icons:** Four prominent icons, each representing a key function, occupy the central area of the screen. These icons are large and use universally understood symbols:
@@ -102,9 +105,11 @@ Talking in more detail about the challenges the elderly people encounter and the
 	**Social Assistant Integration:** For users who prefer voice interaction, a dedicated button or voice prompt can activate the social assistant directly from the main page. This eliminates the need to navigate through multiple menus.
 	
 	By combining clear visuals, simple text labels, and easy access to the social assistant, the Silverlink app empowers seniors to comfortably explore and utilize all the app's features, fostering connection and a sense of community.
-		![[IMG/men1.jpg]]
+		<p align="center">
+	  		<img width="300" height="640" src="IMG/men1.jpg">
+		</p>
 
-3. **The Senior-Friendly News Experience**
+4. **The Senior-Friendly News Experience**
 	Silverlink’s news page is designed to be clear, accessible, and engaging for older adults.
 	- **Large, Readable Text:** News articles are displayed in a large font size, ensuring easy readability for users with varying visual abilities.
 	- **Simple Layout:** The page avoids clutter and uses a clean layout to focus on the content. This makes it easier for seniors to find the information they're looking for without getting overwhelmed.
@@ -113,8 +118,11 @@ Talking in more detail about the challenges the elderly people encounter and the
 	- The text-to-speech function can be activated to have the article read aloud, promoting comfortable information access for users who prefer audio or have difficulty reading extended text.
 	- **Intuitive Navigation:** Swiping left or right on the screen allows users to easily transition between articles, mimicking the familiar action of turning pages in a book or magazine. This intuitive gesture-based navigation makes it simple for seniors to explore the news section at their own pace.
 	By incorporating these features, Silverlink caters to the specific needs of elderly users, empowering them to stay informed and connected to the world around them in a comfortable and frustration-free way.
-	![[IMG/stiri1.jpg]]
-4. **Easy-to-Use AI Assistant for Seniors**
+	<p align="center">
+	  		<img width="300" height="640" src="IMG/news1.jpg">
+		</p>
+
+5. **Easy-to-Use AI Assistant for Seniors**
 
 	Silverlink is designed to be easy and comfortable for seniors to use, regardless of their prior experience with technology. A key feature is the voice-activated AI assistant, accessible with a simple press of a button on the app's home screen (as depicted in the image).
 	
@@ -135,4 +143,8 @@ Talking in more detail about the challenges the elderly people encounter and the
 	- **Improved Well-being:** By reducing loneliness and increasing social interaction, the AI assistant can contribute to a better overall sense of well-being for seniors.
 
 	Overall, Silverlink's user-friendly AI assistant removes technological barriers and empowers seniors to connect, access information, and live more fulfilling lives.
-	![[IMG/assi1.jpg]]
+	
+ 	<p align="center">
+	  		<img width="300" height="640" src="IMG/assi1.jpg">
+		</p>
+
