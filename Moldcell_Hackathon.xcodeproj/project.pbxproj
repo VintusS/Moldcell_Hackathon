@@ -44,6 +44,8 @@
 		715F7C412BA67839003AE503 /* DiezArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = 715F7C3E2BA677DF003AE503 /* DiezArticles.json */; };
 		715F7C432BA6790D003AE503 /* AssistantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7C422BA6790D003AE503 /* AssistantView.swift */; };
 		715F7C452BA6791D003AE503 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7C442BA6791D003AE503 /* GalleryView.swift */; };
+		715F7C482BA68EB9003AE503 /* AssistantQADecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7C472BA68EB9003AE503 /* AssistantQADecoding.swift */; };
+		715F7C492BA68EDA003AE503 /* AssistantQA.json in Resources */ = {isa = PBXBuildFile; fileRef = 715F7C462BA68E64003AE503 /* AssistantQA.json */; };
 		71CE13F52BA661B000B48058 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 71CE13F42BA661B000B48058 /* OpenAISwift */; };
 		71FD19E92BA649D20079CB6F /* JurnalTVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD19E82BA649D20079CB6F /* JurnalTVView.swift */; };
 		71FD19EB2BA649DC0079CB6F /* DiezView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD19EA2BA649DC0079CB6F /* DiezView.swift */; };
@@ -103,6 +105,8 @@
 		715F7C3F2BA6781A003AE503 /* DiezDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiezDecoding.swift; sourceTree = "<group>"; };
 		715F7C422BA6790D003AE503 /* AssistantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantView.swift; sourceTree = "<group>"; };
 		715F7C442BA6791D003AE503 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		715F7C462BA68E64003AE503 /* AssistantQA.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AssistantQA.json; sourceTree = "<group>"; };
+		715F7C472BA68EB9003AE503 /* AssistantQADecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantQADecoding.swift; sourceTree = "<group>"; };
 		71FD19E82BA649D20079CB6F /* JurnalTVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurnalTVView.swift; sourceTree = "<group>"; };
 		71FD19EA2BA649DC0079CB6F /* DiezView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiezView.swift; sourceTree = "<group>"; };
 		71FD19F42BA652C40079CB6F /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
@@ -271,6 +275,8 @@
 				715F7C3B2BA671F4003AE503 /* JurnalTVDecoding.swift */,
 				715F7C3E2BA677DF003AE503 /* DiezArticles.json */,
 				715F7C3F2BA6781A003AE503 /* DiezDecoding.swift */,
+				715F7C462BA68E64003AE503 /* AssistantQA.json */,
+				715F7C472BA68EB9003AE503 /* AssistantQADecoding.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 				712113D82BA4689200E7F28B /* Assets.xcassets in Resources */,
 				715F7C3D2BA67790003AE503 /* JurnalTVArticles.json in Resources */,
 				715277752BA62AD50095B594 /* GoogleService-Info.plist in Resources */,
+				715F7C492BA68EDA003AE503 /* AssistantQA.json in Resources */,
 				71043B112BA4C53D003FD1B4 /* BalooBhai-Regular.ttf in Resources */,
 				715F7C412BA67839003AE503 /* DiezArticles.json in Resources */,
 				715277732BA60BA70095B594 /* StiriMDArticles.json in Resources */,
@@ -455,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				715F7C402BA6781A003AE503 /* DiezDecoding.swift in Sources */,
+				715F7C482BA68EB9003AE503 /* AssistantQADecoding.swift in Sources */,
 				71FD19FB2BA653150079CB6F /* resultView.swift in Sources */,
 				715277722BA60A4C0095B594 /* StiriMDDecoding.swift in Sources */,
 				715F7BF12BA66B1B003AE503 /* TokenizerViewModel.swift in Sources */,
