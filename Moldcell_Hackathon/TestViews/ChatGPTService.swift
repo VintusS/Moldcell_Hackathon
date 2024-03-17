@@ -8,7 +8,7 @@
 import Foundation
 
 class ChatGPTService: ObservableObject {
-    private let apiKey = "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"
+    private let apiKey = "token"
     private let session = URLSession.shared
     // Update the endpoint if necessary. For example, if you're using OpenAI's GPT-3.5 Turbo, you might use a different endpoint
     private let endpoint = URL(string: "https://api.openai.com/v1/engines/gpt-3.5-turbo/completions")!
