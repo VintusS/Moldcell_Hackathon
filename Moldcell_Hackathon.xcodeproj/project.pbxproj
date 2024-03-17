@@ -42,6 +42,8 @@
 		715F7C3D2BA67790003AE503 /* JurnalTVArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = 715F7C3A2BA671AD003AE503 /* JurnalTVArticles.json */; };
 		715F7C402BA6781A003AE503 /* DiezDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7C3F2BA6781A003AE503 /* DiezDecoding.swift */; };
 		715F7C412BA67839003AE503 /* DiezArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = 715F7C3E2BA677DF003AE503 /* DiezArticles.json */; };
+		715F7C432BA6790D003AE503 /* AssistantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7C422BA6790D003AE503 /* AssistantView.swift */; };
+		715F7C452BA6791D003AE503 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7C442BA6791D003AE503 /* GalleryView.swift */; };
 		71CE13F52BA661B000B48058 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 71CE13F42BA661B000B48058 /* OpenAISwift */; };
 		71FD19E92BA649D20079CB6F /* JurnalTVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD19E82BA649D20079CB6F /* JurnalTVView.swift */; };
 		71FD19EB2BA649DC0079CB6F /* DiezView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD19EA2BA649DC0079CB6F /* DiezView.swift */; };
@@ -99,6 +101,8 @@
 		715F7C3B2BA671F4003AE503 /* JurnalTVDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurnalTVDecoding.swift; sourceTree = "<group>"; };
 		715F7C3E2BA677DF003AE503 /* DiezArticles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DiezArticles.json; sourceTree = "<group>"; };
 		715F7C3F2BA6781A003AE503 /* DiezDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiezDecoding.swift; sourceTree = "<group>"; };
+		715F7C422BA6790D003AE503 /* AssistantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantView.swift; sourceTree = "<group>"; };
+		715F7C442BA6791D003AE503 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		71FD19E82BA649D20079CB6F /* JurnalTVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurnalTVView.swift; sourceTree = "<group>"; };
 		71FD19EA2BA649DC0079CB6F /* DiezView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiezView.swift; sourceTree = "<group>"; };
 		71FD19F42BA652C40079CB6F /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
@@ -240,6 +244,8 @@
 				7152775E2BA5A6FC0095B594 /* HomeView.swift */,
 				715277602BA5A7080095B594 /* SettingsView.swift */,
 				715277622BA5A7130095B594 /* ProfileView.swift */,
+				715F7C442BA6791D003AE503 /* GalleryView.swift */,
+				715F7C422BA6790D003AE503 /* AssistantView.swift */,
 			);
 			path = "Main Page Views";
 			sourceTree = "<group>";
@@ -455,11 +461,13 @@
 				7152775B2BA5A28D0095B594 /* TermsandConditions.swift in Sources */,
 				71FD19E92BA649D20079CB6F /* JurnalTVView.swift in Sources */,
 				71FD19EB2BA649DC0079CB6F /* DiezView.swift in Sources */,
+				715F7C452BA6791D003AE503 /* GalleryView.swift in Sources */,
 				71FD19F72BA652EC0079CB6F /* ChatGPTService.swift in Sources */,
 				715277632BA5A7130095B594 /* ProfileView.swift in Sources */,
 				715277612BA5A7080095B594 /* SettingsView.swift in Sources */,
 				7152775F2BA5A6FC0095B594 /* HomeView.swift in Sources */,
 				715F7C3C2BA671F4003AE503 /* JurnalTVDecoding.swift in Sources */,
+				715F7C432BA6790D003AE503 /* AssistantView.swift in Sources */,
 				71FD19F52BA652C40079CB6F /* SpeechRecognizer.swift in Sources */,
 				715277592BA4D5540095B594 /* RegistrationPage.swift in Sources */,
 				71043B0E2BA4C17F003FD1B4 /* LoginPage.swift in Sources */,

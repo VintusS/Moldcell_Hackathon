@@ -132,36 +132,40 @@ struct HomeView: View {
                     }
                     
                     HStack(spacing: 20) {
-                        VStack {
-                            Image(systemName: "photo")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 40, height: 40)
-                                .foregroundColor(.white)
-                            Text("Galerie")
-                                .foregroundColor(.white)
-                                .font(.custom("BalooBhai-Regular", size: 18))
+                        NavigationLink(destination: GalleryView()) {
+                            VStack {
+                                Image(systemName: "photo")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 40, height: 40)
+                                    .foregroundColor(.white)
+                                Text("Galerie")
+                                    .foregroundColor(.white)
+                                    .font(.custom("BalooBhai-Regular", size: 18))
+                            }
+                            .frame(width: 150, height: 150)
+                            .background(RoundedRectangle(cornerRadius: 10).fill(Color.blue))
+                            .shadow(radius: 10)
                         }
-                        .frame(width: 150, height: 150)
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color.blue))
-                        .shadow(radius: 10)
-                        
-                        VStack {
-                            Image(systemName: "message")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 40, height: 40)
-                                .foregroundColor(.white)
-                            Text("Conversații cu un Asistent")
-                                .fixedSize(horizontal: false, vertical: true)
-                                .frame(maxWidth: .infinity, alignment: .center)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(.white)
-                                .font(.custom("BalooBhai-Regular", size: 18))
+
+                        NavigationLink(destination: AssistantView()) {
+                            VStack {
+                                Image(systemName: "message")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 40, height: 40)
+                                    .foregroundColor(.white)
+                                Text("Conversații cu un Asistent")
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .frame(maxWidth: .infinity, alignment: .center)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(.white)
+                                    .font(.custom("BalooBhai-Regular", size: 18))
+                            }
+                            .frame(width: 150, height: 150)
+                            .background(RoundedRectangle(cornerRadius: 10).fill(Color.blue))
+                            .shadow(radius: 10)
                         }
-                        .frame(width: 150, height: 150)
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color.blue))
-                        .shadow(radius: 10)
                     }
                     .padding([.leading, .trailing], 35)
                     .padding(.top, -65)
